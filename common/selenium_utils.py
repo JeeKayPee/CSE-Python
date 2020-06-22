@@ -1,0 +1,15 @@
+def print_element_info(name, element):
+    marker = "-" * 37
+    print(marker)
+    print("Element meta data: " + name)
+    print(marker)
+    print("WebElement object:: ", element)
+    print("Outer HTML: ", element.get_attribute("outerHTML"))
+    print("Inner HTML: ",  element.get_attribute("innerHTML"))
+    print("Text: ", element.text)
+    print("Value: ", element.get_attribute("value"))
+    print("Tag: ", element.tag_name)
+    print("Displayed: ", element.is_displayed())
+    print("Selected: ", element.is_selected())
+    print("Enabled: ", element.is_enabled())
+    print(marker)
